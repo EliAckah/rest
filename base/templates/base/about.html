@@ -1,0 +1,229 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+
+        
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>About Us</h2>
+                    </div>
+                    <div class="col-12">
+                        <a href="{% url 'home' %}">Home</a>
+                        <a href="">About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+        
+
+        <!-- About Start -->
+        <div class="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img" data-parallax="scroll" data-image-src="{% static 'img/about.jpg' %}"></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="section-header">
+                            <p>Learn About Us</p>
+                            <h2>Worldwide non-profit charity organization</h2>
+                        </div>
+                        <div class="about-tab">
+                            <ul class="nav nav-pills nav-justified">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="pill" href="#tab-content-1">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#tab-content-2">Mission</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#tab-content-3">Vision</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="tab-content-1" class="container tab-pane active">
+                                    Rest Charity Foundation is a non-profit organization in Sunyani, Ghana, West Africa seeking to give rest to restless and hope to the hopeless. 
+                                </div>
+                                <div id="tab-content-2" class="container tab-pane fade">
+                                    To improve the quality of lives for the less privileged in education, health and nutrition, the homeless and the financially handicapped through fundraising initiatives and volunteered support and transform our communities by improving these lives.
+                                </div>
+                                <div id="tab-content-3" class="container tab-pane fade">
+                                    Rest Charity Foundation seeks to bring rest to the restless and hope to the despairing heart.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Service Start -->
+        <div class="service">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>What We Do?</p>
+                    <h2>We believe that we can save more lifes with you</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-diet"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Healthy Food</h3>
+                                <p>Provide healthy foods for nursing mothers and their babies, street beggars and to those who can't afford</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-social-care"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Social Care</h3>
+                                <p>Provide devices for the disabled, make donations to orphanges, make donations prisons, make donations the center for the aged.</p>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-healthcare"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Health Care</h3>
+                                <p>Pay hospital bills for those who need intensive care and can not afford.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-education"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Primary Education</h3>
+                                <p>Provide schools with educational stationary and pay the school fees of needy but brilliant students.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-home"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Residence Facilities</h3>
+                                <p>Provide shelters for the homeless.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-kindness"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Give back to the earth</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- Facts Start -->
+        {% comment %} <div class="facts" data-parallax="scroll" data-image-src="{% static 'img/facts.jpg' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="facts-item">
+                            <i class="flaticon-home"></i>
+                            <div class="facts-text">
+                                <h3 class="facts-plus" data-toggle="counter-up">150</h3>
+                                <p>Countries</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="facts-item">
+                            <i class="flaticon-charity"></i>
+                            <div class="facts-text">
+                                <h3 class="facts-plus" data-toggle="counter-up">400</h3>
+                                <p>Volunteers</p>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="col-lg-3 col-md-6">
+                        <div class="facts-item">
+                            <i class="flaticon-kindness"></i>
+                            <div class="facts-text">
+                                <h3 class="facts-dollar" data-toggle="counter-up">10000</h3>
+                                <p>Our Goal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="facts-item">
+                            <i class="flaticon-donation"></i>
+                            <div class="facts-text">
+                                <h3 class="facts-dollar" data-toggle="counter-up">5000</h3>
+                                <p>Raised</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div> {% endcomment %}
+        <!-- Facts End -->
+
+        <!-- Team Start -->
+        <div class="team">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Meet Our Team</p>
+                    <h2>Awesome guys behind our charity activities</h2>
+                </div>
+                <div class="row">
+                    {% for executive in executives %}
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{{executive.exec_pic.url}}" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>{{executive.name}}</h2>
+                                <p>{{executive.exexcutive_pos}}</p>
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+        
+        
+    
+
+</body>
+{% endblock content %}

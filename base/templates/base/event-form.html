@@ -1,0 +1,79 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<body>        
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Volunteer</h2>
+                    </div>
+                    <div class="col-12">
+                        <a href="{% url 'home' %}">Home</a>
+                        <a href="">Volunteer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+       
+        
+        <!-- Volunteer Start -->
+        <div class="container">
+            <div class="volunteer" data-parallax="scroll" data-image-src="{% static 'img/volunteer.jpg' %}">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="volunteer-form">
+                            <form action="" method="POST">
+                                {% csrf_token %}
+                                <div class="control-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" name="name" placeholder="Name" required="required" />
+                                </div>
+                                <div class="control-group">
+                                    <label for="name">Email</label>
+                                    <input type="email" class="form-control" name="email" placeholder="e.g. all@example.com" required="required" />
+                                </div>
+                                <div class="control-group">
+                                    <label for="name">Contact</label>
+                                    <input type="tel" class="form-control" name="contact" placeholder="e.g. +12125552368" required="required" />
+                                </div>
+                                <div class="control-group">
+                                    <label for="join">Select Event To Join</label>
+                                    <select name="join" class="form-control form-select" aria-label="Default select example" required="required" />
+                                        
+                                        {% for event in events  %}
+                                            <option style="color: #4a4c70;" value="{{event.event_title}}">{{event.event_title}}</option>
+                                        {% endfor %}
+                                        
+                                      </select>
+                                </div>
+                                <div>
+                                    <button class="btn btn-custom" type="submit">Become a volunteer</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="volunteer-content">
+                            <div class="section-header">
+                                <p>Become A Volunteer</p>
+                                <h2>Let’s make a difference in the lives of others</h2>
+                            </div>
+                            <div class="volunteer-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non. Aliquam metus tortor, auctor id gravida, viverra quis sem. Curabitur non nisl nec nisi maximus. Aenean convallis porttitor. Aliquam interdum at lacus non blandit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Volunteer End -->
+
+
+
+</body>
+{% endblock content %}
