@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-4+-2+b8vz4q+$mz2vhr-_&2km!pxu*-bkspbk@0js9uwv&dgv%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://restcharityfoundation.herokuapp.com/','localhost:8000']
+ALLOWED_HOSTS = ['https://restcharityapp.herokuapp.com/','localhost:8000']
 
 
 # Application definition
